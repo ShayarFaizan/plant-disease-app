@@ -26,4 +26,6 @@ if uploaded_file is not None:
     if confidence < 0.70:
         st.write("Prediction: Unknown")
     else:
-        st.write("Prediction:", class_na_
+        st.write("Prediction:", class_names[predicted_class])
+        st.write("Confidence:", round(confidence*100,2), "%")
+
