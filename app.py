@@ -3,7 +3,7 @@ import numpy as np
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 
-model = load_model("plant_disease_model.keras")
+model = load_model("plant_disease_model.h5")
 
 class_names = list(train_data.class_indices.keys())
 
