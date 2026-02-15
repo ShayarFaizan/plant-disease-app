@@ -5,7 +5,6 @@ from tensorflow.keras.preprocessing import image
 
 model = load_model("plant_disease_model.h5", compile=False)
 
-
 class_names = list(train_data.class_indices.keys())
 
 st.title("Plant Disease Classifier 🌿")
